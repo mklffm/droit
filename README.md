@@ -1,86 +1,50 @@
-# Fondation pour la promotion des droits - Site Web
+# FPRA Droits Website
 
-Ce projet est un site web pour la "Fondation pour la promotion des droits", une association algérienne dédiée à la promotion et à la défense des droits.
+This repository contains the website for FPRA Droits, a platform dedicated to promoting rights awareness and defense.
 
-## Fonctionnalités
+## Features
 
-- Design moderne et responsive adapté à tous les appareils
-- Pages principales :
-  - Accueil
-  - À propos (mission, objectifs, équipe)
-  - Actualités et projets
-  - Revue des droits humains
-  - Formations
-  - Ressources et documentation
-  - Témoignages
-  - Espace société civile
-  - Contact
+- Multilingual support (French and Arabic)
+- Responsive design for mobile and desktop
+- Organized menu navigation
+- Clean and modern UI
 
-## Structure des fichiers
+## Project Structure
 
-```
-/
-├── index.html                  # Page d'accueil
-├── about.html                  # Page À propos
-├── contact.html                # Page Contact
-├── css/
-│   └── style.css               # Feuille de style principale
-├── js/
-│   └── script.js               # JavaScript principal
-└── img/                        # Dossier des images (à compléter)
+- `css/`: Contains all styling files
+- `js/`: Contains JavaScript functionality
+- `translations/`: Contains language files (fr.json, ar.json)
+- `images/`: Contains website images and assets
+
+## Development
+
+To run the website locally:
+
+```bash
+python -m http.server 8000
 ```
 
-## Technologies utilisées
+Then visit http://localhost:8000 in your browser.
 
-- HTML5
-- CSS3 (avec variables CSS pour la gestion des couleurs)
-- JavaScript (vanilla)
-- Font Awesome pour les icônes
-- Google Fonts pour la typographie
+## Recent Improvements
 
-## Comment utiliser
+- Fixed language switcher functionality
+- Improved mobile menu organization
+- Added visual enhancements to the hero section
+- Removed dropdown menu subtitles for cleaner navigation
+- Organized menu items with icons
 
-1. Clonez ce dépôt
-2. Ouvrez le fichier `index.html` dans votre navigateur
+## Contributing
 
-## Personnalisation
+To contribute to this project:
 
-### Couleurs
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature/your-feature`)
+6. Open a Pull Request
 
-Les couleurs principales du site sont définies comme variables CSS dans le fichier `css/style.css` :
+## License
 
-```css
-:root {
-    --primary-color: #2c3e50;     /* Bleu foncé */
-    --secondary-color: #d35400;   /* Orange */
-    --accent-color: #3498db;      /* Bleu clair */
-    --text-color: #333;           /* Texte principal */
-    --light-color: #f8f9fa;       /* Fond clair */
-    --dark-color: #343a40;        /* Fond foncé */
-}
-```
-
-Pour changer le schéma de couleurs, modifiez simplement ces valeurs.
-
-### Images
-
-Remplacez les images d'espace réservé dans le dossier `img/` par les images réelles de votre organisation.
-
-### Contenu
-
-Le contenu de chaque page peut être facilement modifié en éditant les fichiers HTML correspondants. 
-
-## Développement futur
-
-- Ajout de pages supplémentaires (revue, formations, etc.)
-- Système de gestion de contenu pour les actualités et les ressources
-- Fonctionnalité de recherche
-- Intégration de médias sociaux améliorée
-
-## Licence
-
-Ce projet est destiné à l'usage exclusif de la Fondation pour la promotion des droits.
-
-## Contact
-
-Pour toute question concernant ce site web, veuillez contacter [votre contact]. 
+This project is proprietary and belongs to FPRA Droits. 
