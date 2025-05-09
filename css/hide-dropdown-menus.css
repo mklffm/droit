@@ -1,0 +1,41 @@
+/* Hide dropdown menus completely */
+.dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Remove dropdown indicators */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Make dropdown toggles behave like regular links */
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* Remove hover effects for dropdowns */
+.dropdown:hover .dropdown-menu,
+.dropdown-open .dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Remove any dropdown-related transforms */
+.dropdown:hover .dropdown-toggle::after,
+.dropdown-open .dropdown-toggle::after {
+    transform: none !important;
+}
+
+/* Make dropdown items behave like regular menu items on mobile */
+@media (max-width: 991px) {
+    .dropdown-menu {
+        display: none !important;
+    }
+    
+    .dropdown-open .dropdown-menu {
+        display: none !important;
+    }
+} 

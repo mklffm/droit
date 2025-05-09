@@ -1,0 +1,1224 @@
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formations et ateliers proposés par la Fondation pour la promotion des droits - Renforcement des compétences et partage des connaissances.">
+    <title>Formations - Fondation pour la promotion des droits</title>
+    <link rel="icon" href="img/path742.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link rel="stylesheet" href="css/footer-fix.css">
+    <link rel="stylesheet" href="css/mobile-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        /* Fix pour les animations qui pourraient masquer du contenu */
+        .reveal-left, .reveal-right, .reveal-up {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: all 0.8s ease;
+        }
+        .reveal-left.active, .reveal-right.active, .reveal-up.active {
+            opacity: 1 !important;
+        }
+        
+        /* Style pour la section formations-intro */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .intro-image-container {
+            position: relative;
+        }
+        
+        /* Correction pour les stats cards */
+        .stats-card {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            z-index: 2;
+            max-width: 300px;
+        }
+        
+        /* Media query pour l'affichage mobile */
+        @media (max-width: 768px) {
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-card {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                margin-top: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/rtl-styles.css">
+    <script src="js/translations.js"></script>
+    <script src="js/mobile-translation-fix.js"></script>
+    <script src="js/french-reset-fix.js"></script>
+    <link rel="stylesheet" href="css/dynamic-menu.css">
+
+    <!-- RTL Support for Dynamic Menu -->
+    <style>
+        html[dir='rtl'] .dynamic-nav-menu > li > a::after {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        
+        html[dir='rtl'] .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+        
+        html[dir='rtl'] .dropdown-toggle::after {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+        
+        html[dir='rtl'] .dynamic-lang-switch {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+        
+        @media (max-width: 991px) {
+            html[dir='rtl'] .dynamic-nav-menu {
+                right: auto;
+                left: -280px;
+            }
+            
+            html[dir='rtl'] .dynamic-nav-menu.active {
+                right: auto;
+                left: 0;
+            }
+            
+            html[dir='rtl'] .dropdown-menu a {
+                padding: 12px 35px 12px 25px;
+            }
+            
+            html[dir='rtl'] .dropdown-toggle::after {
+                right: auto;
+                left: 25px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/logo-enhancement.css">
+    <link rel="stylesheet" href="css/logo-special-effects.css">
+
+    <!-- Month-specific badge colors -->
+    <style id="month-badge-colors">
+        .dynamic-logo-badge.month-1 { background-color: #1E88E5; } /* January - Blue */
+        .dynamic-logo-badge.month-2 { background-color: #E91E63; } /* February - Pink */
+        .dynamic-logo-badge.month-3 { background-color: #43A047; } /* March - Green */
+        .dynamic-logo-badge.month-4 { background-color: #7B1FA2; } /* April - Purple */
+        .dynamic-logo-badge.month-5 { background-color: #EF6C00; } /* May - Orange */
+        .dynamic-logo-badge.month-6 { background-color: #C0CA33; } /* June - Lime */
+        .dynamic-logo-badge.month-7 { background-color: #FF5722; } /* July - Deep Orange */
+        .dynamic-logo-badge.month-8 { background-color: #00ACC1; } /* August - Cyan */
+        .dynamic-logo-badge.month-9 { background-color: #FFC107; } /* September - Amber */
+        .dynamic-logo-badge.month-10 { background-color: #795548; } /* October - Brown */
+        .dynamic-logo-badge.month-11 { background-color: #3949AB; } /* November - Indigo */
+        .dynamic-logo-badge.month-12 { background-color: #D32F2F; } /* December - Red */
+    </style>
+    <link rel="stylesheet" href="css/dynamic-header-fix.css">
+    <link rel="stylesheet" href="css/transparent-text-fix.css">
+    <link rel="stylesheet" href="css/hide-dropdown-menus.css">
+    <link rel="stylesheet" href="css/organize-menu.css">
+    <link rel="stylesheet" href="css/mobile-menu-restore.css">
+    <link rel="stylesheet" href="css/fix-mobile-menu.css">
+    <link rel="stylesheet" href="css/remove-text-shadow.css">
+</head>
+<body>
+    <a href="#content" class="skip-link">Passer au contenu</a>
+<header class="dynamic-header">
+        <div class="dynamic-header-inner">
+            <!-- Logo -->
+            <a href="index.html" class="dynamic-logo">
+                <div class="dynamic-logo-badge" id="logo-badge">Nouveau</div>
+                <img src="img/path742.png" alt="Fondation pour la promotion des droits" aria-hidden="true">
+                <div class="dynamic-logo-text">
+                    <strong>Fondation</strong>
+                    <span>Pour la promotion des droits</span>
+                </div>
+                <span class="visually-hidden">Fondation pour la promotion des droits</span>
+            </a>
+            
+            <!-- Navigation Menu -->
+            <nav aria-label="Navigation principale">
+                <ul class="dynamic-nav-menu">
+                    <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="about.html" class="dropdown-toggle" data-i18n="nav_about">À propos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#mission" data-i18n="nav_mission">Notre mission</a></li>
+                            <li><a href="about.html#vision" data-i18n="nav_vision">Notre vision</a></li>
+                            <li><a href="about.html#team" data-i18n="nav_team">Notre équipe</a></li>
+                            <li><a href="about.html#history" data-i18n="nav_history">Notre histoire</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="news.html" class="dropdown-toggle" data-i18n="nav_news">Actualités</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html#latest" data-i18n="nav_latest_news">Dernières actualités</a></li>
+                            <li><a href="news.html#projects" data-i18n="nav_projects">Projets en cours</a></li>
+                            <li><a href="news.html#press" data-i18n="nav_press">Communiqués de presse</a></li>
+                            <li><a href="news.html#events" data-i18n="nav_events">Événements à venir</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="revue.html" class="dropdown-toggle" data-i18n="nav_review">Revue</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="revue.html#current" data-i18n="nav_current_issue">Numéro actuel</a></li>
+                            <li><a href="revue.html#archives" data-i18n="nav_archives">Archives</a></li>
+                            <li><a href="revue.html#contribute" data-i18n="nav_contribute">Comment contribuer</a></li>
+                            <li><a href="revue.html#editorial" data-i18n="nav_editorial">Comité éditorial</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="formations.html" class="dropdown-toggle" data-i18n="nav_training">Formations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="formations.html#programs" data-i18n="nav_training_programs">Programmes de formation</a></li>
+                            <li><a href="formations.html#workshops" data-i18n="nav_workshops">Ateliers</a></li>
+                            <li><a href="formations.html#calendar" data-i18n="nav_calendar">Calendrier</a></li>
+                            <li><a href="formations.html#registration" data-i18n="nav_registration">Inscription</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="resources.html" class="dropdown-toggle" data-i18n="nav_resources">Ressources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="resources.html#publications" data-i18n="nav_publications">Publications</a></li>
+                            <li><a href="resources.html#reports" data-i18n="nav_reports">Rapports</a></li>
+                            <li><a href="resources.html#guides" data-i18n="nav_guides">Guides pratiques</a></li>
+                            <li><a href="resources.html#multimedia" data-i18n="nav_multimedia">Multimédia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="testimonials.html" data-i18n="nav_testimonials">Témoignages</a></li>
+                    <li><a href="civil-society.html" data-i18n="nav_civil_society">Société civile</a></li>
+                    <li><a href="gallery.html" data-i18n="nav_gallery">Galerie</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    
+                    <!-- Language Switcher for Mobile -->
+                    
+                </ul>
+            </nav>
+            
+            
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="dynamic-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dynamic Menu Header -->
+    
+    
+    <!-- Menu Overlay for Mobile -->
+    <div class="dynamic-menu-overlay"></div>
+
+    
+    
+    <!-- Menu backdrop for mobile navigation -->
+    
+    
+    
+
+    <main id="content">
+        <section class="hero animated-bg" style="position: relative; overflow: hidden;">
+            <!-- Background with overlay -->
+            <div class="hero-video-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.6;">
+                <div class="video-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(60, 180, 150, 0.85), rgba(243, 146, 7, 0.85)); z-index: 1;"></div>
+                <img src="img/real/education-rights.jpg" alt="" class="fallback-bg" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+            </div>
+            
+            <div class="container" style="position: relative; z-index: 2; padding: 100px 0;">
+                <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h1 class="animate-fadeIn" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: white; font-weight: 800; text-shadow: 2px 2px 15px rgba(0,0,0,0.3);">
+                        Nos Formations
+                    </h1>
+                    
+                    <p class="animate-fadeIn" style="animation-delay: 0.3s; font-size: 1.3rem; margin-bottom: 2rem; color: rgba(255,255,255,0.95); text-shadow: 1px 1px 5px rgba(0,0,0,0.2); line-height: 1.6;">
+                        Renforcement des compétences et partage des connaissances pour les acteurs de la société civile
+                    </p>
+                    
+                    <div class="hero-buttons animate-fadeIn" style="display: flex; gap: 20px; justify-content: center; margin-top: 30px; animation-delay: 0.5s;">
+                        <a href="#programs" class="btn-primary" style="background: white; color: var(--primary-color); padding: 15px 35px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Nos programmes</span>
+                        </a>
+                        <a href="#registration" class="btn-outline" style="background: transparent; color: white; padding: 15px 35px; border-radius: 50px; border: 2px solid rgba(255,255,255,0.3); font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
+                            <i class="fas fa-user-plus"></i>
+                            <span>S'inscrire</span>
+                        </a>
+                    </div>
+                    
+                    <div class="breadcrumb animate-fadeIn" style="display: flex; justify-content: center; gap: 10px; margin-top: 30px; color: white; animation-delay: 0.7s;">
+                        <a data-i18n="nav_home" href="index.html" style="color: white; opacity: 0.8; text-decoration: none;">Accueil</a>
+                        <span style="opacity: 0.8;">/</span>
+                        <span data-i18n="nav_training" style="font-weight: 600;">Formations</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Curved Shape Divider -->
+            <div class="shape-divider" style="position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="position: relative; display: block; width: calc(100% + 1.3px); height: 70px; fill: white;">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                </svg>
+            </div>
+        </section>
+        
+        <section class="formations-intro" id="programs" style="position: relative; padding: 100px 0; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); overflow: hidden;">
+            <!-- Background pattern -->
+            <div class="pattern-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMzAgMzBtLTI4IDBhMjggMjggMCAxIDAgNTYgMCAyOCAyOCAwIDEgMC01NiAwIiBzdHJva2U9InJnYmEoNzUsIDEyMywgMjExLCAwLjEpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjxwYXRoIGQ9Ik0zMCAzMG0tMTggMGExOCAxOCAwIDEgMCAzNiAwIDE4IDE4IDAgMSAwLTM2IDAiIHN0cm9rZT0icmdiYSg2MCwgMTgwLCAxNTAsIDAuMTUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjwvZz48L3N2Zz4='); background-position: center; opacity: 0.6; z-index: 0;"></div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="intro-header text-center" style="text-align: center; margin-bottom: 50px;">
+                    <span class="intro-subtitle" style="text-transform: uppercase; font-size: 0.9rem; font-weight: 700; color: var(--secondary-color); letter-spacing: 2px; display: block; margin-bottom: 15px;">Notre programme éducatif</span>
+                    <h2 class="section-title">Renforcer les compétences des acteurs</h2>
+                </div>
+                
+                <div class="intro-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                    <div class="intro-content" style="opacity: 1; transform: none;">
+                        <p style="font-size: 1.1rem; margin-bottom: 20px; line-height: 1.7; color: var(--text-color); display: block !important; visibility: visible !important;">La <strong style="color: var(--primary-color);">Fondation pour la promotion des droits</strong> organise régulièrement des formations destinées aux juristes, aux acteurs de la société civile, aux journalistes et aux défenseurs des droits humains.</p>
+                        
+                        <p style="font-size: 1.1rem; margin-bottom: 20px; line-height: 1.7; color: var(--text-color); display: block !important; visibility: visible !important;">Notre programme de formation vise à renforcer les capacités des acteurs engagés dans la promotion et la défense des droits, en leur fournissant les outils juridiques, méthodologiques et pratiques nécessaires à leur action.</p>
+                        
+                        <div class="intro-features" style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="intro-feature" style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--primary-color);">
+                                <div style="margin-bottom: 15px;">
+                                    <i class="fas fa-user-graduate" style="font-size: 1.5rem; color: var(--primary-color);"></i>
+                                </div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Expertise reconnue</h3>
+                                <p style="color: var(--text-color); font-size: 0.95rem;">Formations animées par des experts nationaux et internationaux</p>
+                            </div>
+                            
+                            <div class="intro-feature" style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+                                <div style="margin-bottom: 15px;">
+                                    <i class="fas fa-certificate" style="font-size: 1.5rem; color: var(--secondary-color);"></i>
+                                </div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Contenus actualisés</h3>
+                                <p style="color: var(--text-color); font-size: 0.95rem;">Programmes conformes aux standards internationaux</p>
+                            </div>
+                            
+                            <div class="intro-feature" style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid #4b7bd3;">
+                                <div style="margin-bottom: 15px;">
+                                    <i class="fas fa-users" style="font-size: 1.5rem; color: #4b7bd3;"></i>
+                                </div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Réseautage</h3>
+                                <p style="color: var(--text-color); font-size: 0.95rem;">Créez des liens durables avec d'autres professionnels</p>
+                            </div>
+                            
+                            <div class="intro-feature" style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid #f3926f;">
+                                <div style="margin-bottom: 15px;">
+                                    <i class="fas fa-hands-helping" style="font-size: 1.5rem; color: #f3926f;"></i>
+                                </div>
+                                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Application pratique</h3>
+                                <p style="color: var(--text-color); font-size: 0.95rem;">Mettez en œuvre les connaissances acquises immédiatement</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-image-container" style="opacity: 1; transform: none;">
+                        <div class="intro-image-frame" style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; z-index: 1;">
+                            <img src="img/real/education-rights.jpg" alt="Participants à une formation sur les droits" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        
+                        <div class="stats-card" style="position: absolute; bottom: -30px; right: -30px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); z-index: 2; max-width: 300px;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color);">Formations en chiffres</h3>
+                            <div class="stats-items" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-value" style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">15+</div>
+                                    <div class="stat-label" style="font-size: 0.9rem; color: var(--text-color);">Formations/an</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-value" style="font-size: 2rem; font-weight: 700; color: var(--secondary-color);">500+</div>
+                                    <div class="stat-label" style="font-size: 0.9rem; color: var(--text-color);">Participants</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-value" style="font-size: 2rem; font-weight: 700; color: #4b7bd3;">30+</div>
+                                    <div class="stat-label" style="font-size: 0.9rem; color: var(--text-color);">Experts</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-value" style="font-size: 2rem; font-weight: 700; color: #f3926f;">12</div>
+                                    <div class="stat-label" style="font-size: 0.9rem; color: var(--text-color);">Wilayas</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative element -->
+                        <div style="position: absolute; top: -20px; left: -20px; width: 80px; height: 80px; background: rgba(75, 123, 211, 0.2); border-radius: 50%; z-index: 0;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-formation" id="workshops" style="padding: 100px 0; background: linear-gradient(to bottom, #ffffff, #f8fafc); position: relative; overflow: hidden;">
+            <!-- Background elements -->
+            <div class="past-bg-shapes" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+                <div style="position: absolute; top: 15%; right: 10%; width: 200px; height: 200px; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; background: rgba(60, 180, 150, 0.05);"></div>
+                <div style="position: absolute; bottom: 10%; left: 5%; width: 250px; height: 250px; border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%; background: rgba(243, 146, 7, 0.05);"></div>
+            </div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="section-header text-center" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle" style="text-transform: uppercase; font-size: 0.9rem; font-weight: 700; color: var(--secondary-color); letter-spacing: 2px; display: block; margin-bottom: 15px;">Réalisations récentes</span>
+                    <h2 class="section-title">Formation récente</h2>
+                    <p style="font-size: 1.1rem; max-width: 700px; margin: 20px auto 0; color: var(--text-color);">Découvrez notre dernière formation sur les mécanismes nationaux de défense des droits humains</p>
+                </div>
+                
+                <div class="formation-card reveal-up" style="max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative;">
+                    <!-- Card header with gradient -->
+                    <div class="card-header" style="background: linear-gradient(135deg, var(--primary-color), #4b7bd3); padding: 30px; color: white; position: relative; overflow: hidden;">
+                        <!-- Header background pattern -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMzBtLTI4IDBhMjggMjggMCAxIDAgNTYgMCAyOCAyOCAwIDEgMC01NiAwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L3N2Zz4='); background-position: center; opacity: 0.2; z-index: 0;"></div>
+                        
+                        <div style="position: relative; z-index: 1;">
+                            <div class="formation-date" style="display: inline-block; background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px; font-size: 0.9rem; margin-bottom: 15px;">
+                                Mai 2024
+                            </div>
+                            <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 10px; color: white;">Les mécanismes nationaux de défense des droits humains</h3>
+                            <div class="header-meta" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+                                <div class="meta-item" style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Alger, Algérie</span>
+                                </div>
+                                <div class="meta-item" style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="fas fa-users"></i>
+                                    <span>30 participants</span>
+                                </div>
+                                <div class="meta-item" style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 jours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card body with content and image -->
+                    <div class="card-body" style="padding: 40px; display: grid; grid-template-columns: 3fr 2fr; gap: 40px; align-items: center;">
+                        <div class="formation-content">
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px; color: var(--text-color);">Dans le cadre de notre engagement pour la promotion, la diffusion et la protection des droits humains en Algérie, la Fondation pour la promotion des droits a organisé une formation nationale intitulée :</p>
+                            
+                            <div style="background: rgba(60, 180, 150, 0.1); border-left: 4px solid var(--primary-color); padding: 15px 20px; margin: 25px 0; border-radius: 0 10px 10px 0;">
+                                <p style="font-size: 1.1rem; font-weight: 600; font-style: italic; color: var(--primary-color); margin: 0;">"Les mécanismes nationaux de défense des droits humains"</p>
+                            </div>
+                            
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px; color: var(--text-color);">Cette initiative s'inscrit dans notre plan stratégique de renforcement des capacités de la jeunesse algérienne engagée, en leur offrant des outils pratiques pour défendre efficacement les droits humains, conformément à la Constitution algérienne de novembre 2020 et aux traités internationaux en vigueur.</p>
+                            
+                            <h4 style="font-size: 1.2rem; margin: 25px 0 15px; color: var(--text-color);">Points clés de la formation :</h4>
+                            <ul style="margin: 0 0 25px; padding-left: 25px;">
+                                <li style="margin-bottom: 12px; position: relative; color: var(--text-color);">
+                                    <span style="color: var(--primary-color); font-weight: 600;">Analyse de la Constitution :</span> Étude approfondie de la Constitution et des textes législatifs en vigueur
+                                </li>
+                                <li style="margin-bottom: 12px; position: relative; color: var(--text-color);">
+                                    <span style="color: var(--primary-color); font-weight: 600;">Accords internationaux :</span> Examen des accords internationaux ratifiés par l'Algérie
+                                </li>
+                                <li style="margin-bottom: 12px; position: relative; color: var(--text-color);">
+                                    <span style="color: var(--primary-color); font-weight: 600;">Ateliers pratiques :</span> Maîtrise de l'utilisation des instruments juridiques dans les contextes professionnels et militants
+                                </li>
+                            </ul>
+                            
+                            <div class="formation-cta" style="margin-top: 30px;">
+                                <a href="#" class="btn-primary" style="display: inline-flex; align-items: center; gap: 10px; background: var(--primary-gradient); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; box-shadow: 0 10px 20px rgba(60, 180, 150, 0.25); transition: all 0.3s ease;">
+                                    <i class="fas fa-images"></i>
+                                    <span>Voir les photos</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="formation-image">
+                            <div style="border-radius: 15px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.1); position: relative;">
+                                <img src="img/real/youth-engagement.jpg" alt="Jeunes engagés dans la formation" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                                
+                                <!-- Image overlay with decorative elements -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0)); pointer-events: none;"></div>
+                                
+                                <!-- Decorative badge -->
+                                <div style="position: absolute; top: 20px; right: 20px; background: white; padding: 10px; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+                                    <i class="fas fa-award" style="font-size: 1.5rem; color: var(--secondary-color);"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial quote -->
+                            <div style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); margin-top: -30px; position: relative; z-index: 2; margin-left: 20px; margin-right: 20px;">
+                                <p style="font-style: italic; color: var(--text-color); margin-bottom: 15px; font-size: 0.95rem; line-height: 1.5;">
+                                    "Une formation fondamentale qui m'a permis de mieux comprendre les mécanismes juridiques à notre disposition pour défendre les droits."
+                                </p>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem;">K</div>
+                                    <div>
+                                        <div style="font-weight: 600; color: var(--text-color);">Karim B.</div>
+                                        <div style="font-size: 0.8rem; color: var(--text-muted);">Participant, Oran</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card footer with tags -->
+                    <div class="card-footer" style="padding: 20px 40px; background: #f9f9f9; border-top: 1px solid #eee;">
+                        <div class="formation-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            <span style="display: inline-block; padding: 6px 12px; background: rgba(60, 180, 150, 0.1); border-radius: 30px; font-size: 0.85rem; color: var(--primary-color);">Droits humains</span>
+                            <span style="display: inline-block; padding: 6px 12px; background: rgba(75, 123, 211, 0.1); border-radius: 30px; font-size: 0.85rem; color: #4b7bd3;">Constitution</span>
+                            <span style="display: inline-block; padding: 6px 12px; background: rgba(243, 146, 7, 0.1); border-radius: 30px; font-size: 0.85rem; color: var(--secondary-color);">Mécanismes de défense</span>
+                            <span style="display: inline-block; padding: 6px 12px; background: rgba(243, 146, 111, 0.1); border-radius: 30px; font-size: 0.85rem; color: #f3926f;">Jeunesse algérienne</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-formation" id="calendar" style="padding: 100px 0; background: linear-gradient(135deg, rgba(245, 247, 250, 1) 0%, rgba(255, 255, 255, 1) 100%); position: relative; overflow: hidden;">
+            <!-- Background elements -->
+            <div class="upcoming-bg-shapes" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+                <div style="position: absolute; top: 20%; left: 10%; width: 180px; height: 180px; border-radius: 30% 70% 50% 50% / 50% 30% 70% 50%; background: rgba(243, 146, 7, 0.07);"></div>
+                <div style="position: absolute; bottom: 15%; right: 5%; width: 220px; height: 220px; border-radius: 50% 50% 30% 70% / 30% 50% 50% 70%; background: rgba(60, 180, 150, 0.05);"></div>
+            </div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="section-header text-center" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle" style="text-transform: uppercase; font-size: 0.9rem; font-weight: 700; color: var(--primary-color); letter-spacing: 2px; display: block; margin-bottom: 15px;">À vos agendas</span>
+                    <h2 class="section-title">Prochaine formation</h2>
+                    <p style="font-size: 1.1rem; max-width: 700px; margin: 20px auto 0; color: var(--text-color);">Inscrivez-vous dès maintenant à notre prochaine formation sur la protection digitale</p>
+                </div>
+                
+                <div class="upcoming-card reveal-up" style="max-width: 1000px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative; border-top: 5px solid var(--secondary-color);">
+                    <div class="upcoming-banner" style="position: absolute; top: 30px; right: -5px; background: var(--secondary-gradient); color: white; padding: 8px 25px; font-weight: 600; box-shadow: 0 5px 15px rgba(243, 146, 7, 0.3); z-index: 10;">
+                        <span>À venir</span>
+                        <!-- Triangle cutout -->
+                        <div style="position: absolute; right: 0; bottom: -10px; width: 0; height: 0; border-style: solid; border-width: 0 15px 10px 0; border-color: transparent #c06800 transparent transparent;"></div>
+                    </div>
+                    
+                    <div class="upcoming-content" style="padding: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                        <div class="upcoming-details">
+                            <div class="upcoming-date" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                                <div class="calendar-icon" style="min-width: 80px; height: 80px; background: var(--light-color); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                                    <div style="background: var(--secondary-color); color: white; text-align: center; padding: 5px 0; font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">Juin</div>
+                                    <div style="display: flex; align-items: center; justify-content: center; height: calc(100% - 30px); font-size: 1.8rem; font-weight: 700; color: var(--secondary-color);">2024</div>
+                                </div>
+                                
+                                <div>
+                                    <h3 style="font-size: 2rem; margin-bottom: 5px; color: var(--text-color);">Protection digitale</h3>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.95rem; color: var(--text-color);">
+                                        <div style="display: flex; align-items: center; gap: 5px;">
+                                            <i class="fas fa-map-marker-alt" style="color: var(--secondary-color);"></i>
+                                            <span>Alger, Algérie</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 5px;">
+                                            <i class="fas fa-clock" style="color: var(--secondary-color);"></i>
+                                            <span>3 jours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px; color: var(--text-color);">Dans un monde de plus en plus connecté, la sécurité numérique devient essentielle pour les défenseurs des droits humains et les activistes. Cette formation vise à fournir les connaissances et outils nécessaires pour protéger vos données et communications en ligne.</p>
+                            
+                            <h4 style="font-size: 1.2rem; margin: 25px 0 15px; color: var(--text-color);">Cette formation couvrira :</h4>
+                            <ul style="margin: 0 0 25px; padding-left: 5px; list-style: none;">
+                                <li style="margin-bottom: 12px; position: relative; padding-left: 35px; color: var(--text-color);">
+                                    <i class="fas fa-shield-alt" style="position: absolute; left: 0; top: 3px; color: var(--secondary-color); font-size: 1.2rem;"></i>
+                                    <span>Protection des comptes et gestion des mots de passe</span>
+                                </li>
+                                <li style="margin-bottom: 12px; position: relative; padding-left: 35px; color: var(--text-color);">
+                                    <i class="fas fa-lock" style="position: absolute; left: 0; top: 3px; color: var(--secondary-color); font-size: 1.2rem;"></i>
+                                    <span>Chiffrement et communications sécurisées</span>
+                                </li>
+                                <li style="margin-bottom: 12px; position: relative; padding-left: 35px; color: var(--text-color);">
+                                    <i class="fas fa-user-secret" style="position: absolute; left: 0; top: 3px; color: var(--secondary-color); font-size: 1.2rem;"></i>
+                                    <span>Navigation anonyme et protection de la vie privée</span>
+                                </li>
+                                <li style="margin-bottom: 12px; position: relative; padding-left: 35px; color: var(--text-color);">
+                                    <i class="fas fa-laptop-code" style="position: absolute; left: 0; top: 3px; color: var(--secondary-color); font-size: 1.2rem;"></i>
+                                    <span>Sécurité des appareils mobiles et ordinateurs</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="upcoming-cta" style="margin-top: 30px;">
+                                <a href="#registration" class="btn-primary" style="display: inline-flex; align-items: center; gap: 10px; background: var(--secondary-gradient); color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; box-shadow: 0 10px 20px rgba(243, 146, 7, 0.25); transition: all 0.3s ease;">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span>Préinscription</span>
+                                </a>
+                                <a href="#" class="btn-outline" style="display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--text-color); padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; border: 2px solid #e2e8f0; margin-left: 15px; transition: all 0.3s ease;">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Calendrier complet</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="upcoming-visual">
+                            <div style="position: relative;">
+                                <!-- Main image with overlay -->
+                                <div style="border-radius: 15px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.1); position: relative;">
+                                    <div style="padding-top: 100%; position: relative; overflow: hidden;">
+                                        <img src="img/real/digital-security.jpg" alt="Protection digitale et cybersécurité" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" onerror="this.src='img/real/digital-rights.jpg'; this.onerror='';">
+                                        
+                                        <!-- Image overlay with gradient -->
+                                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(243, 146, 7, 0.6)); pointer-events: none;"></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Floating elements -->
+                                <div class="floating-element" style="position: absolute; top: -20px; right: -20px; width: 90px; height: 90px; background: white; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--secondary-color);"></i>
+                                </div>
+                                
+                                <div class="trainer-card" style="position: absolute; bottom: -25px; left: 20px; right: 20px; background: white; border-radius: 15px; padding: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                                    <div style="display: flex; align-items: center; gap: 15px;">
+                                        <div style="width: 60px; height: 60px; border-radius: 15px; overflow: hidden; background: var(--secondary-color);">
+                                            <img src="img/real/digital-rights.jpg" alt="Formateur en sécurité digitale" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem;\'>S</div>';">
+                                        </div>
+                                        <div>
+                                            <h4 style="margin: 0 0 5px; font-size: 1.1rem; color: var(--text-color);">Formation par</h4>
+                                            <p style="margin: 0; font-weight: 600; color: var(--secondary-color);">Spécialistes en cybersécurité</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Notification banner -->
+                    <div class="notification-banner" style="padding: 20px; background: rgba(60, 180, 150, 0.1); border-top: 1px solid rgba(60, 180, 150, 0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 50px; height: 50px; flex-shrink: 0; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <i class="fas fa-bell" style="color: var(--primary-color); font-size: 1.3rem;"></i>
+                        </div>
+                        <div>
+                            <p style="margin: 0; font-size: 1rem; color: var(--text-color);"><strong style="color: var(--primary-color);">Note :</strong> Nous organisons des formations tout au long de l'année. Suivez-nous sur nos réseaux sociaux pour être informé(e) des prochaines sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration" id="registration" style="padding: 120px 0; background: linear-gradient(135deg, rgba(60, 180, 150, 0.95), rgba(75, 123, 211, 0.9)), url('img/real/teamwork.jpg'); background-size: cover; background-position: center; background-blend-mode: overlay; color: white; position: relative; overflow: hidden;">
+            <!-- Decorative elements -->
+            <div class="registration-shapes" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+                <div style="position: absolute; top: 10%; right: 5%; width: 250px; height: 250px; border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%; background: rgba(255,255,255,0.05);"></div>
+                <div style="position: absolute; bottom: 10%; left: 5%; width: 200px; height: 200px; border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%; background: rgba(255,255,255,0.05);"></div>
+                <div style="position: absolute; top: 40%; left: 10%; width: 150px; height: 150px; border-radius: 50%; background: rgba(255,255,255,0.07);"></div>
+            </div>
+            
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="registration-header text-center" style="text-align: center; margin-bottom: 60px;">
+                    <span class="registration-subtitle animate-fadeIn" style="text-transform: uppercase; font-size: 0.9rem; font-weight: 700; color: rgba(255,255,255,0.8); letter-spacing: 2px; display: block; margin-bottom: 15px;">Rejoignez-nous</span>
+                    <h2 class="animate-fadeIn" style="font-size: 2.8rem; margin-bottom: 20px; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.1);">Inscription aux formations</h2>
+                    <p class="animate-fadeIn" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: rgba(255,255,255,0.9); line-height: 1.6;">Remplissez ce formulaire pour vous préinscrire à nos prochaines formations et ateliers</p>
+                </div>
+                
+                <div class="registration-form-container" style="max-width: 800px; margin: 0 auto; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2);">
+                    <form class="registration-form" style="padding: 40px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                            <div class="form-group">
+                                <label for="firstname" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Prénom</label>
+                                <input type="text" id="firstname" name="firstname" required="" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease;">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Nom</label>
+                                <input type="text" id="lastname" name="lastname" required="" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease;">
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                            <div class="form-group">
+                                <label for="email" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Email</label>
+                                <input type="email" id="email" name="email" required="" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease;">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease;">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label for="profession" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Profession / Organisation</label>
+                            <input type="text" id="profession" name="profession" required="" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease;">
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label for="formation" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Formation souhaitée</label>
+                            <select id="formation" name="formation" required="" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease;">
+                                <option value="" disabled="" selected="">Choisir une formation</option>
+                                <option value="digital">Protection digitale (Juin 2024)</option>
+                                <option value="advocacy">Plaidoyer pour les droits humains (À venir)</option>
+                                <option value="legal">Assistance juridique (À venir)</option>
+                                <option value="reporting">Documentation des violations (À venir)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label for="message" style="display: block; margin-bottom: 8px; color: white; font-weight: 500;">Message (optionnel)</label>
+                            <textarea id="message" name="message" rows="4" style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.1); color: white; font-size: 1rem; transition: all 0.3s ease; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label class="checkbox-container" style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
+                                <input type="checkbox" id="newsletter" name="newsletter" checked="" style="margin-top: 5px;">
+                                <span style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">Je souhaite recevoir la newsletter et être informé(e) des prochaines formations</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit" style="background: white; color: var(--primary-color); border: none; padding: 15px 30px; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 1.1rem; display: block; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: all 0.3s ease;">Envoyer ma demande</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+
+
+    <section class="newsletter" id="newsletter" style="position: relative; padding: 100px 0; overflow: hidden; background: linear-gradient(135deg, rgba(60,180,150,0.9) 0%, rgba(243,146,7,0.9) 100%);">
+        <!-- Background elements -->
+        <div class="newsletter-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+            <div style="position: absolute; width: 100%; height: 100%; background-image: url('img/real/pattern-bg.jpg'); background-size: cover; background-position: center; opacity: 0.1;"></div>
+            
+            <!-- Floating shapes animation -->
+            <div class="floating-shape shape1" style="position: absolute; top: 10%; left: 5%; width: 80px; height: 80px; border-radius: 20%; background: rgba(255,255,255,0.1); animation: float 8s ease-in-out infinite;"></div>
+            <div class="floating-shape shape2" style="position: absolute; bottom: 15%; right: 10%; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,0.1); animation: float 12s ease-in-out infinite;"></div>
+            <div class="floating-shape shape3" style="position: absolute; top: 40%; right: 20%; width: 60px; height: 60px; border-radius: 30%; background: rgba(255,255,255,0.1); animation: float 10s ease-in-out infinite;"></div>
+        </div>
+        
+        <div class="container" style="position: relative; z-index: 1; max-width: 900px;">
+            <div class="newsletter-content text-center" style="text-align: center; color: white;">
+                <span class="newsletter-subtitle" style="text-transform: uppercase; font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 15px;" data-i18n="newsletter_subtitle">Restez informés</span>
+                
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: white;" data-i18n="newsletter_title">Abonnez-vous à notre newsletter</h2>
+                
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; color: rgba(255,255,255,0.9);" data-i18n="newsletter_description">Recevez les dernières actualités, publications et événements de la Fondation directement dans votre boîte de réception.</p>
+                
+                <!-- Enhanced Newsletter Form -->
+                <div class="newsletter-form-container" style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.2); max-width: 600px; margin: 0 auto;">
+                    <form class="newsletter-form" action="#" method="post" style="position: relative;">
+                        <div style="position: relative; margin-bottom: 20px;">
+                            <i class="far fa-envelope" style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); color: var(--gray-color);"></i>
+                            <input type="email" id="email-newsletter" placeholder="Votre adresse email" required="" aria-required="true" style="width: 100%; padding: 15px 20px 15px 50px; border: 2px solid #eee; border-radius: 50px; font-size: 1rem; transition: all 0.3s ease;">
+                        </div>
+                        
+                        <div class="newsletter-options" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; justify-content: center;">
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="actualites" checked="" style="accent-color: var(--primary-color);">
+                                <span data-i18n="nav_news" style="color: var(--text-color);">Actualités</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="events" checked="" style="accent-color: var(--primary-color);">
+                                <span style="color: var(--text-color);" data-i18n="nav_events">Événements</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="publications" checked="" style="accent-color: var(--primary-color);">
+                                <span data-i18n="nav_publications" style="color: var(--text-color);">Publications</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-footer" style="text-align: center;">
+                            <button type="submit" class="btn btn-primary" style="padding: 15px 40px; border-radius: 50px; display: inline-flex; align-items: center; gap: 10px; background: var(--primary-gradient);">
+                                <span data-i18n="newsletter_subscribe">S'abonner</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <p style="margin-top: 15px; font-size: 0.8rem; color: var(--gray-color);" data-i18n="newsletter_privacy">En vous inscrivant, vous acceptez de recevoir nos emails. Vous pourrez vous désabonner à tout moment.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Social Media Follow -->
+                <div class="newsletter-social" style="margin-top: 40px;">
+                    <p style="margin-bottom: 20px; color: rgba(255,255,255,0.9);" data-i18n="follow_us_social">Suivez-nous également sur les réseaux sociaux :</p>
+                    
+                    <div class="social-links" style="display: flex; justify-content: center; gap: 15px;">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; color: white; font-size: 20px; transition: all 0.3s ease; backdrop-filter: blur(5px);">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; color: white; font-size: 20px; transition: all 0.3s ease; backdrop-filter: blur(5px);">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; color: white; font-size: 20px; transition: all 0.3s ease; backdrop-filter: blur(5px);">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; color: white; font-size: 20px; transition: all 0.3s ease; backdrop-filter: blur(5px);">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<footer style="background: white; color: #333; padding: 60px 0 0; position: relative; overflow: hidden; box-shadow: 0 -5px 20px rgba(0,0,0,0.05);">
+    <!-- Background decorative elements -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.03; pointer-events: none;">
+        <div style="position: absolute; bottom: -100px; right: -100px; width: 300px; height: 300px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);"></div>
+        <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);"></div>
+    </div>
+    
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+            <!-- Organization Info -->
+            <div>
+                <div style="margin-bottom: 20px;">
+                    <img src="img/path742.png" alt="Fondation pour la promotion des droits" style="height: 80px; width: auto; margin-bottom: 15px;">
+                </div>
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 15px; font-weight: 600; color: #333;" data-i18n="site_title_full">
+                    Fondation pour la promotion des droits
+                    <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: var(--primary-color); border-radius: 3px;"></span>
+                </h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; color: #555;" data-i18n="footer_mission">Ensemble, pour des droits connus, reconnus et défendus.</p>
+                <div style="margin-top: 25px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                        <i class="fas fa-map-marker-alt" style="width: 20px; color: var(--primary-color);"></i>
+                        <span style="color: #555;">Alger, Algérie</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                        <i class="fas fa-envelope" style="width: 20px; color: var(--primary-color);"></i>
+                        <a href="mailto:contact@fondationdroits.org" style="color: #555; text-decoration: none; transition: all 0.3s ease;">contact@fondationdroits.org</a>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-phone" style="width: 20px; color: var(--primary-color);"></i>
+                        <a href="tel:+21300000000" style="color: #555; text-decoration: none; transition: all 0.3s ease;">+213 XX XX XX XX</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Liens rapides -->
+            <div>
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 15px; font-weight: 600; color: #333;">
+                    Liens rapides
+                    <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: var(--primary-color); border-radius: 3px;"></span>
+                </h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 12px;">
+                        <a href="index.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_home">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Accueil
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="about.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_about">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> À propos
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="news.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_news">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Actualités
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="revue.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_review">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Revue
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="formations.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_training">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Formations
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Autres liens -->
+            <div>
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 15px; font-weight: 600; color: #333;">
+                    Informations
+                    <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: var(--primary-color); border-radius: 3px;"></span>
+                </h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 12px;">
+                        <a href="resources.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_resources">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Ressources
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="testimonials.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_testimonials">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Témoignages
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="civil-society.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_civil_society">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Société civile
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="gallery.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_gallery">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Galerie
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="contact.html" style="color: #555; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease;" data-i18n="nav_contact">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 10px; color: var(--primary-color);"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Suivez-nous -->
+            <div>
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 15px; font-weight: 600; color: #333;">
+                    Suivez-nous
+                    <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: var(--primary-color); border-radius: 3px;"></span>
+                </h3>
+                <p style="margin-bottom: 20px; color: #555; line-height: 1.6;">Restez connecté(e) avec nous sur les réseaux sociaux pour suivre nos actualités et événements.</p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="https://web.facebook.com/profile.php?id=61566611772758&amp;sk=about" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); border-radius: 50%; color: white; font-size: 18px; transition: all 0.3s ease;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/FondationDZ" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); border-radius: 50%; color: white; font-size: 18px; transition: all 0.3s ease;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fondationdz" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); border-radius: 50%; color: white; font-size: 18px; transition: all 0.3s ease;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); border-radius: 50%; color: white; font-size: 18px; transition: all 0.3s ease;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div style="padding: 20px 0; border-top: 1px solid rgba(0,0,0,0.1); text-align: center;">
+            <p style="margin: 0; color: #555; font-size: 0.9rem;">© 2024 Fondation pour la promotion des droits. Tous droits réservés.</p>
+        </div>
+    </div>
+    
+    <!-- Scroll to top button -->
+    <a href="#" id="scroll-to-top" style="position: absolute; right: 30px; bottom: 30px; width: 50px; height: 50px; background-color: var(--primary-color); color: white; display: flex; justify-content: center; align-items: center; border-radius: 50%; text-decoration: none; font-size: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</footer>
+
+
+
+    <script src="js/script.js"></script>
+    
+    <script src="js/mobile-table-fix.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation des éléments au chargement de la page
+            document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up').forEach(el => {
+                el.classList.add('active');
+            });
+            
+            // Animations au défilement
+            function revealOnScroll() {
+                const reveals = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up, .stagger-animation > *');
+                
+                reveals.forEach((element, index) => {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < windowHeight - elementVisible) {
+                        // Pour l'animation décalée des éléments dans une grille
+                        if (element.parentNode.classList.contains('stagger-animation')) {
+                            setTimeout(() => {
+                                element.classList.add('active');
+                            }, 100 * index);
+                        } else {
+                            element.classList.add('active');
+                        }
+                    }
+                });
+            }
+            
+            // Exécuter au chargement de la page
+            revealOnScroll();
+            
+            // Exécuter au défilement
+            window.addEventListener('scroll', revealOnScroll);
+            
+            // Animation du formulaire d'inscription
+            const formInputs = document.querySelectorAll('.registration-form input, .registration-form textarea, .registration-form select');
+            
+            formInputs.forEach(input => {
+                // Focus effect
+                input.addEventListener('focus', function() {
+                    this.style.background = 'rgba(255,255,255,0.15)';
+                    this.style.borderColor = 'rgba(255,255,255,0.4)';
+                    this.style.boxShadow = '0 0 0 2px rgba(255,255,255,0.1)';
+                });
+                
+                // Blur effect
+                input.addEventListener('blur', function() {
+                    this.style.background = 'rgba(255,255,255,0.1)';
+                    this.style.borderColor = 'rgba(255,255,255,0.2)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // Animation du bouton d'inscription
+            const submitButton = document.querySelector('.btn-submit');
+            if (submitButton) {
+                submitButton.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.2)';
+                });
+                
+                submitButton.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+                
+                // Simuler la soumission du formulaire
+                const registrationForm = document.querySelector('.registration-form');
+                if (registrationForm) {
+                    registrationForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        
+                        // Animation du bouton
+                        submitButton.innerHTML = '<i class="fas fa-check-circle"></i> Demande envoyée';
+                        submitButton.style.background = 'var(--primary-color)';
+                        submitButton.style.color = 'white';
+                        
+                        // Désactiver le bouton
+                        submitButton.disabled = true;
+                        
+                        // Simuler un délai de traitement
+                        setTimeout(() => {
+                            alert("Votre demande d'inscription a été envoyée avec succès ! Nous vous contacterons prochainement.");
+                            
+                            // Réinitialiser le formulaire
+                            registrationForm.reset();
+                            
+                            // Restaurer le bouton
+                            setTimeout(() => {
+                                submitButton.innerHTML = 'Envoyer ma demande';
+                                submitButton.style.background = 'white';
+                                submitButton.style.color = 'var(--primary-color)';
+                                submitButton.disabled = false;
+                            }, 2000);
+                        }, 1500);
+                    });
+                }
+            }
+            
+            // Animation des cartes sociales
+            const socialCards = document.querySelectorAll('.social-card');
+            
+            socialCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                    
+                    // Animer le bouton
+                    const button = this.querySelector('.follow-btn');
+                    if (button) {
+                        button.style.paddingRight = '25px';
+                        const icon = button.querySelector('i');
+                        if (icon) {
+                            icon.style.transform = 'translateX(5px)';
+                        }
+                    }
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.08)';
+                    
+                    // Réinitialiser l'animation du bouton
+                    const button = this.querySelector('.follow-btn');
+                    if (button) {
+                        button.style.paddingRight = '20px';
+                        const icon = button.querySelector('i');
+                        if (icon) {
+                            icon.style.transform = 'translateX(0)';
+                        }
+                    }
+                });
+            });
+            
+            // Animation des boutons hero
+            const heroBtns = document.querySelectorAll('.hero-buttons a');
+            heroBtns.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    if (this.classList.contains('btn-primary')) {
+                        this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.2)';
+                    } else {
+                        this.style.background = 'rgba(255,255,255,0.2)';
+                    }
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    if (this.classList.contains('btn-primary')) {
+                        this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+                    } else {
+                        this.style.background = 'transparent';
+                    }
+                });
+            });
+            
+            // Animation des feature cards
+            const featureCards = document.querySelectorAll('.intro-feature');
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+                });
+            });
+            
+            // Effet de focus amélioré pour le champ newsletter
+            const newsletterInput = document.querySelector('#email-newsletter');
+            if (newsletterInput) {
+                newsletterInput.addEventListener('focus', function() {
+                    this.style.background = 'rgba(255,255,255,0.25)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15), 0 0 0 2px rgba(255,255,255,0.2)';
+                });
+                
+                newsletterInput.addEventListener('blur', function() {
+                    this.style.background = 'rgba(255,255,255,0.2)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+            }
+            
+            // Animation pour le bouton newsletter
+            const subscribeBtn = document.querySelector('.btn-subscribe');
+            if (subscribeBtn) {
+                subscribeBtn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.15)';
+                });
+                
+                subscribeBtn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+                });
+                
+                // Simulation de l'inscription à la newsletter
+                const newsletterForm = document.querySelector('.newsletter-form');
+                if (newsletterForm) {
+                    newsletterForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        
+                        const originalText = subscribeBtn.innerHTML;
+                        subscribeBtn.innerHTML = '<i class="fas fa-check"></i><span>Inscription réussie !</span>';
+                        subscribeBtn.style.background = 'var(--primary-color)';
+                        subscribeBtn.style.color = 'white';
+                        
+                        setTimeout(() => {
+                            newsletterForm.reset();
+                            setTimeout(() => {
+                                subscribeBtn.innerHTML = originalText;
+                                subscribeBtn.style.background = 'white';
+                                subscribeBtn.style.color = 'var(--primary-color)';
+                            }, 2000);
+                        }, 1500);
+                    });
+                }
+            }
+            
+            // Effet de flottement pour les éléments décoratifs
+            const floatingElements = document.querySelectorAll('.past-bg-shapes > div, .upcoming-bg-shapes > div, .registration-shapes > div, .newsletter-shapes > div, .social-bg-shapes > div');
+            
+            floatingElements.forEach((element, index) => {
+                // Animation légèrement différente pour chaque élément
+                const direction = index % 2 === 0 ? 1 : -1;
+                const duration = 3 + Math.random() * 2; // Entre 3 et 5 secondes
+                const delay = Math.random() * 2; // Entre 0 et 2 secondes
+                
+                // Appliquer l'animation de flottement
+                element.style.animation = `float ${duration}s ease-in-out ${delay}s infinite alternate`;
+                element.style.transform = `translateY(${direction * 10}px)`;
+            });
+        });
+    </script>
+    <script src="js/dynamic-menu.js"></script>
+
+    <!-- Dynamic Logo Color Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dynamicHeader = document.querySelector('.dynamic-header');
+            const logoImg = document.querySelector('.dynamic-logo img');
+            const originalLogoSrc = logoImg.getAttribute('src');
+            
+            // Change logo color based on scroll position
+            window.addEventListener('scroll', function() {
+                if (dynamicHeader.classList.contains('scrolled')) {
+                    // Original logo (dark version) for white background
+                    if (logoImg.getAttribute('src') !== originalLogoSrc) {
+                        logoImg.setAttribute('src', originalLogoSrc);
+                    }
+                } else {
+                    // Use lighter version with drop shadow for better visibility on transparent background
+                    logoImg.style.filter = 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))';
+                }
+            });
+        });
+    </script>
+
+    
+    <!-- Logo Badge Control Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to show/hide the logo badge based on special events
+            function handleLogoBadge() {
+                const logoBadge = document.getElementById('logo-badge');
+                if (logoBadge) {
+                    const today = new Date();
+                    
+                    // Always show current badge
+                    logoBadge.textContent = "Mai";
+                    logoBadge.classList.add('show');
+                    
+                    // Add current month class for styling
+                    logoBadge.className = 'dynamic-logo-badge show month-5';
+                    
+                    // Example: Show badge for specific date range (e.g., for an event)
+                    const eventStart = new Date('2024-01-15');
+                    const eventEnd = new Date('2024-01-30');
+                    
+                    if (today >= eventStart && today <= eventEnd) {
+                        logoBadge.textContent = "Événement";
+                        logoBadge.classList.add('show');
+                    }
+                    
+                    // You can add more conditions for other special events
+                }
+            }
+            
+            // Run badge logic
+            handleLogoBadge();
+        });
+    </script>
+
+
+    
+
+    <script src="js/add-language-switcher.js"></script>
+ 
+
+            <script src="js/embedded-arabic-translations.js"></script>
+<script src="js/translation-failsafe.js"></script>
+    <script src="js/disable-dropdown-menus.js"></script>
+    <script src="js/organize-menu.js"></script>
+    <script src="js/fix-header-layout.js"></script>
+    <script src="js/mobile-menu-restore.js"></script>
+    <script src="js/fix-mobile-menu.js"></script>
+</body></html>

@@ -1,0 +1,107 @@
+/* Improved menu organization styles */
+
+/* Better spacing and alignment for menu items */
+.dynamic-nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.dynamic-nav-menu > li {
+    margin: 0 5px;
+}
+
+.dynamic-nav-menu > li > a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.dynamic-nav-menu > li > a:hover {
+    background-color: rgba(60, 180, 150, 0.1);
+    color: var(--primary-color, #3CB496);
+}
+
+/* Active state */
+.dynamic-nav-menu > li > a.active {
+    background-color: var(--primary-color, #3CB496);
+    color: white;
+}
+
+/* Compact header layout */
+.dynamic-header-inner {
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo adjustments */
+.dynamic-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Adjust compact language switcher */
+.compact-language-switcher {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.compact-language-switcher a {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.compact-language-switcher a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 991px) {
+    .dynamic-nav-menu {
+        padding-top: 20px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .dynamic-nav-menu > li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .dynamic-nav-menu > li > a {
+        padding: 12px 20px;
+        width: 100%;
+        display: block;
+        border-radius: 0;
+        border-left: 3px solid transparent;
+    }
+    
+    .dynamic-nav-menu > li > a:hover,
+    .dynamic-nav-menu > li > a.active {
+        background-color: rgba(60, 180, 150, 0.1);
+        border-left: 3px solid var(--primary-color, #3CB496);
+    }
+    
+    .dynamic-nav-menu > li > a.active {
+        background-color: rgba(60, 180, 150, 0.2);
+        color: var(--primary-color, #3CB496);
+    }
+} 

@@ -1,0 +1,347 @@
+/* RTL (Right-to-Left) Styles for Arabic Language */
+body.rtl {
+    text-align: right;
+}
+
+/* Navigation adjustments for RTL */
+body.rtl .main-nav {
+    direction: rtl;
+}
+
+body.rtl .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+body.rtl .nav-separator {
+    margin: 0 15px;
+}
+
+/* RTL adjustments for lists and content */
+body.rtl ul, 
+body.rtl ol {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+body.rtl .mission-list li,
+body.rtl .footer-section ul li {
+    padding-right: 25px;
+    padding-left: 0;
+}
+
+body.rtl .mission-list li i,
+body.rtl .footer-section ul li i {
+    right: 0;
+    left: auto;
+}
+
+/* RTL for flexbox elements */
+body.rtl .flex-row {
+    flex-direction: row-reverse;
+}
+
+/* Alignment adjustments */
+body.rtl .text-right {
+    text-align: left;
+}
+
+body.rtl .text-left {
+    text-align: right;
+}
+
+/* Form elements in RTL */
+body.rtl input,
+body.rtl textarea {
+    text-align: right;
+}
+
+body.rtl .form-group label {
+    text-align: right;
+}
+
+/* Icon placement adjustments */
+body.rtl .icon-left {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+body.rtl .icon-right {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Grid adjustments */
+body.rtl .news-grid,
+body.rtl .programs-grid,
+body.rtl .partners-grid {
+    direction: rtl;
+}
+
+/* Other directional elements */
+body.rtl .testimonial-author,
+body.rtl .news-meta,
+body.rtl .featured-news-content {
+    text-align: right;
+}
+
+body.rtl .quote-icon {
+    text-align: right;
+}
+
+body.rtl .read-more {
+    flex-direction: row-reverse;
+}
+
+body.rtl .read-more i {
+    transform: rotate(180deg);
+}
+
+/* Button icons direction */
+body.rtl .btn i {
+    transform: scaleX(-1);
+}
+
+/* Language selector adjustments */
+body.rtl .language-switch {
+    direction: ltr; /* Keep language selector left-to-right */
+}
+
+/* Font adjustments for Arabic */
+body.rtl h1, 
+body.rtl h2, 
+body.rtl h3, 
+body.rtl h4, 
+body.rtl h5, 
+body.rtl h6, 
+body.rtl p, 
+body.rtl a, 
+body.rtl li, 
+body.rtl span {
+    font-family: 'Noto Sans Arabic', 'Tajawal', sans-serif;
+}
+
+/* Add Noto Sans Arabic font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+
+/* RTL (Right-to-Left) styles for Arabic language support */
+
+/* General RTL adjustments */
+.rtl {
+    text-align: right;
+    direction: rtl;
+}
+
+/* Adjust padding and margins for RTL */
+.rtl .container,
+.rtl .row,
+.rtl section,
+.rtl .col {
+    direction: rtl;
+}
+
+/* Fix flexbox ordering for RTL */
+.rtl .d-flex {
+    flex-direction: row-reverse;
+}
+
+/* Adjust navigation for RTL */
+.rtl .navbar-nav,
+.rtl .nav {
+    flex-direction: row-reverse;
+}
+
+.rtl .navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+/* Fix icons and chevrons for RTL */
+.rtl .fa-chevron-right:before {
+    content: "\f053"; /* fa-chevron-left */
+}
+
+.rtl .fa-chevron-left:before {
+    content: "\f054"; /* fa-chevron-right */
+}
+
+.rtl .fa-arrow-right:before {
+    content: "\f060"; /* fa-arrow-left */
+}
+
+.rtl .fa-arrow-left:before {
+    content: "\f061"; /* fa-arrow-right */
+}
+
+/* Fix text alignment in specific elements */
+.rtl h1, 
+.rtl h2, 
+.rtl h3, 
+.rtl h4, 
+.rtl h5, 
+.rtl h6, 
+.rtl p, 
+.rtl .card-text, 
+.rtl .card-title {
+    text-align: right;
+}
+
+/* Adjust form elements for RTL */
+.rtl input, 
+.rtl textarea,
+.rtl select {
+    text-align: right;
+}
+
+.rtl input[type="email"],
+.rtl input[type="text"],
+.rtl input[type="search"],
+.rtl textarea {
+    padding-right: 12px;
+    padding-left: 40px;
+}
+
+.rtl .form-control {
+    text-align: right;
+}
+
+/* Adjust form icons positions */
+.rtl .input-icon i,
+.rtl .form-group i {
+    right: auto;
+    left: 15px;
+}
+
+/* Fix input groups for RTL */
+.rtl .input-group > .form-control {
+    border-radius: 0 .25rem .25rem 0 !important;
+}
+
+.rtl .input-group > .input-group-append > .btn {
+    border-radius: .25rem 0 0 .25rem !important;
+}
+
+/* Footer adjustments for RTL */
+.rtl footer ul li a i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* Adjust grid layout for RTL */
+.rtl [class*="col-"] {
+    float: right;
+}
+
+/* Testimonial cards for RTL */
+.rtl .testimonial-card {
+    text-align: right;
+}
+
+.rtl .testimonial-card .testimonial-content {
+    text-align: right;
+}
+
+.rtl .testimonial-card .testimonial-author {
+    text-align: right;
+}
+
+/* Adjust list styles for RTL */
+.rtl ul, 
+.rtl ol {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+/* Fix buttons with icons for RTL */
+.rtl .btn i {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Image positions in RTL */
+.rtl .image-left {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.rtl .image-right {
+    float: left;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+/* Adjust language switcher for RTL */
+.rtl .language-switch {
+    direction: ltr; /* Keep language switcher in LTR direction */
+}
+
+/* Adjust notifications and banners for RTL */
+.rtl .notification,
+.rtl .banner {
+    text-align: right;
+}
+
+/* Adjust modal dialogs for RTL */
+.rtl .modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+}
+
+.rtl .modal-footer {
+    justify-content: flex-start;
+}
+
+/* Fix tables for RTL */
+.rtl table {
+    text-align: right;
+}
+
+.rtl th {
+    text-align: right;
+}
+
+/* Fix blockquotes for RTL */
+.rtl blockquote {
+    border-left: none;
+    border-right: 4px solid var(--primary-color);
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+/* Media queries for responsive RTL layout */
+@media (max-width: 768px) {
+    .rtl .navbar-nav {
+        text-align: right;
+    }
+    
+    .rtl .mobile-menu {
+        right: auto;
+        left: 0;
+    }
+}
+
+/* Direction-sensitive elements (special handling) */
+.rtl .direction-sensitive.rtl-adjusted {
+    transform: scaleX(-1);
+}
+
+/* Border radius adjustments for RTL */
+.rtl .rounded-right {
+    border-radius: .25rem 0 0 .25rem !important;
+}
+
+.rtl .rounded-left {
+    border-radius: 0 .25rem .25rem 0 !important;
+}
+
+/* Fix box shadows for RTL */
+.rtl .shadow-right {
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
+}
+
+.rtl .shadow-left {
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1) !important;
+} 
