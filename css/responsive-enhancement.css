@@ -1,0 +1,310 @@
+/* Enhanced Mobile Responsiveness - For all pages */
+
+/* Base responsive adjustments */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/* Mobile adjustments (phones) */
+@media (max-width: 767px) {
+    /* Font size adjustments */
+    html {
+        font-size: 14px;
+    }
+    
+    h1, .h1 {
+        font-size: 2.2rem !important;
+    }
+    
+    h2, .h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    h3, .h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Hero section adjustments */
+    .hero-section, .hero {
+        min-height: auto !important;
+        padding: 80px 0 !important;
+    }
+    
+    .hero-content {
+        padding: 0 10px !important;
+    }
+    
+    .hero-buttons, .cta-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+    
+    /* Stats and card layouts */
+    .impact-stats, .resource-stats > div, .stats-container {
+        flex-wrap: wrap !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .stat-item {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Grid adjustments */
+    [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Resource items and article layouts */
+    .resource-item, .featured-news, .news-item {
+        flex-direction: column !important;
+    }
+    
+    .resource-item > div, .featured-news > div {
+        width: 100% !important;
+    }
+    
+    .featured-news-image {
+        height: 250px !important;
+        min-height: auto !important;
+    }
+    
+    .featured-news-content {
+        padding: 30px 20px !important;
+    }
+    
+    /* Form elements */
+    input, select, textarea {
+        width: 100% !important;
+    }
+    
+    form div {
+        flex-direction: column !important;
+    }
+    
+    /* Buttons */
+    .btn {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    
+    /* Sections padding */
+    section {
+        padding: 50px 0 !important;
+    }
+    
+    /* Newsletter section */
+    .newsletter-content form {
+        padding: 20px !important;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Hero section adjustments */
+    .hero-section, .hero {
+        min-height: auto !important;
+    }
+    
+    /* Stats and card layouts */
+    .impact-stats, .resource-stats > div {
+        flex-wrap: wrap !important;
+    }
+    
+    /* Featured content */
+    .featured-news {
+        flex-direction: column !important;
+    }
+    
+    .featured-news-image {
+        height: 300px !important;
+        min-height: auto !important;
+    }
+}
+
+/* Specific fixes for common components */
+
+/* Fix for the image blocks */
+@media (max-width: 767px) {
+    .intro-image-frame, [class*="-image-frame"] {
+        margin: 0 auto 30px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+    }
+    
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Fix for resource lists */
+    .resources-list .resource-meta {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+    }
+    
+    /* Fix breadcrumbs */
+    .breadcrumb {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+}
+
+/* Fixed positioning for header on scroll */
+@media (max-width: 991px) {
+    .dynamic-header {
+        position: sticky !important;
+        top: 0 !important;
+        width: 100% !important;
+        z-index: 1000 !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    }
+    
+    .dynamic-header-inner {
+        padding: 15px 20px !important;
+    }
+}
+
+/* Footer adjustments */
+@media (max-width: 767px) {
+    footer [class*="col-"], 
+    footer [class*="grid-"],
+    footer [style*="display: grid"],
+    footer [style*="display: flex"] {
+        display: block !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        margin-bottom: 30px !important;
+    }
+    
+    footer h4, footer h3 {
+        margin-top: 20px !important;
+    }
+}
+
+/* Contact page specific */
+@media (max-width: 767px) {
+    .contact-info-grid,
+    .contact-form-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .contact-info-item {
+        padding: 20px !important;
+    }
+}
+
+/* Gallery page specific */
+@media (max-width: 767px) {
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+    
+    .gallery-item {
+        height: auto !important;
+    }
+}
+
+/* Fix for tables */
+@media (max-width: 767px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Fix for social media icons in footer on mobile */
+@media (max-width: 767px) {
+    /* Center social icons in footer - catch all variations */
+    footer div[style*="display: flex; gap: 15px"],
+    footer .social-links,
+    footer div[class*="social"],
+    footer .footer-social {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    
+    /* Make social icons bigger and more touch-friendly on mobile - catch all variations */
+    footer a[style*="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px"],
+    footer .social-links a,
+    footer a[class*="social"],
+    footer .footer-social a {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        margin: 5px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* Make LinkedIn icon consistent with others - catch all variations */
+    footer a[href*="linkedin"],
+    footer a[href*="facebook"],
+    footer a[href*="twitter"],
+    footer a[href*="instagram"] {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        margin: 5px !important;
+    }
+    
+    /* Center the "Suivez-nous" section content - catch all variations */
+    footer h3[style*="font-size: 1.3rem; margin-bottom: 20px"],
+    footer h3[style*="font-size: 22px"],
+    footer h4[data-i18n="contact_social_title"],
+    footer .footer-section h3,
+    footer div > h3 {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
+    footer p[style*="margin-bottom: 20px; color: #555"],
+    footer p[style*="margin-bottom: 20px; color: rgba"],
+    footer div > p {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
+    /* Align heading line indicator to center - catch all variations */
+    footer h3 span[style*="position: absolute; bottom: 0; left: 0; width: 50px"],
+    footer h3:after,
+    footer h3::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin-left: 0 !important;
+    }
+    
+    /* Additional fixes for specific column issues in footer */
+    footer .footer-content,
+    footer [style*="display: grid"] {
+        display: block !important;
+    }
+    
+    footer [class*="col-"],
+    footer > div > div {
+        width: 100% !important;
+        margin-bottom: 30px !important;
+    }
+    
+    /* Improve spacing between sections */
+    footer > div > div {
+        padding-bottom: 20px !important;
+    }
+} 
